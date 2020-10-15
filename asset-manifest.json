@@ -1,0 +1,23 @@
+{
+  "files": {
+    "main.css": "/sportsquiz/static/css/main.2f208ca0.chunk.css",
+    "main.js": "/sportsquiz/static/js/main.344785e6.chunk.js",
+    "main.js.map": "/sportsquiz/static/js/main.344785e6.chunk.js.map",
+    "runtime-main.js": "/sportsquiz/static/js/runtime-main.6ba2cf6b.js",
+    "runtime-main.js.map": "/sportsquiz/static/js/runtime-main.6ba2cf6b.js.map",
+    "static/js/2.a8785fa3.chunk.js": "/sportsquiz/static/js/2.a8785fa3.chunk.js",
+    "static/js/2.a8785fa3.chunk.js.map": "/sportsquiz/static/js/2.a8785fa3.chunk.js.map",
+    "index.html": "/sportsquiz/index.html",
+    "precache-manifest.a3b5073e9b28665c95d296c734e9fa66.js": "/sportsquiz/precache-manifest.a3b5073e9b28665c95d296c734e9fa66.js",
+    "service-worker.js": "/sportsquiz/service-worker.js",
+    "static/css/main.2f208ca0.chunk.css.map": "/sportsquiz/static/css/main.2f208ca0.chunk.css.map",
+    "static/js/2.a8785fa3.chunk.js.LICENSE.txt": "/sportsquiz/static/js/2.a8785fa3.chunk.js.LICENSE.txt",
+    "static/media/hero.css": "/sportsquiz/static/media/hero.4f5c04a0.jpg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.6ba2cf6b.js",
+    "static/js/2.a8785fa3.chunk.js",
+    "static/css/main.2f208ca0.chunk.css",
+    "static/js/main.344785e6.chunk.js"
+  ]
+}
