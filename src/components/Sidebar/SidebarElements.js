@@ -7,15 +7,7 @@ export const SidebarContainer =styled.aside`
 z-index:999;
 width:100%;
 height:100%;
- 
-// background: #5f2c82;  
-// background: -webkit-linear-gradient(to right, #49a09d, #5f2c82); 
-// background: linear-gradient(to right, #49a09d, #5f2c82);  
-background-image: radial-gradient(
-    circle farthest-corner at 10% 20%,
-    rgba(153, 103, 186, 1) 41.2%,
-    rgba(0, 113, 227, 1) 90%
-  );
+ background:#01bf71;
 display:grid;
 align-items:center;
 
@@ -33,7 +25,7 @@ top: ${({isOpen})=> (isOpen ? '0': '-150%')};
 export const CloseIcon =styled(FaTimes)`
 color:#fff;
 &:hover{
-    color: #01bf71;
+    color: #fff;
 }
 `;
 
@@ -69,7 +61,7 @@ color:#fff;
 cursor:pointer;
 
 &:hover {
-    color:#01bf71;
+    color:#ddd;
     transition:0.2s ease-in-out;
 }
 

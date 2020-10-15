@@ -112,12 +112,9 @@ export const Button =styled(Link)`
 // background: #EC6F66;   
 // background: -webkit-linear-gradient(to right, #F3A183, #EC6F66);  
 // background: linear-gradient(to right, #F3A183, #EC6F66);
-// background:#74cc00;  
-background-image: radial-gradient(
-    circle farthest-corner at 10% 20%,
-    rgba(153, 103, 186, 1) 41.2%,
-    rgba(0, 113, 227, 1) 90%
-  );
+background:#01bf71;  
+ 
+ 
 
  white-space:nowrap;
  padding:${({big})=>(big ? '14px 48px': '12px 30px')};

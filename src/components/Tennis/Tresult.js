@@ -50,7 +50,10 @@ function Tresult({score}) {
    
                                  },
                                  content:{
-                                   backgroundColor: '#252d4a',
+                                   // backgroundColor: '#252d4a',
+                                   borderRradius: '50px',
+                                   backgroundColor:'#01bf71',
+ 
                                       display:'flex',
                                       flexDirection:'column',
                                       justifyContent:'center',

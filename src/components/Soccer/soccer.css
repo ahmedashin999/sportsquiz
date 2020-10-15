@@ -1,9 +1,10 @@
 .soccer {
-    background-image: radial-gradient(
+    /* background-image: radial-gradient(
       circle farthest-corner at 10% 20%,
       rgba(153, 103, 186, 1) 41.2%,
       rgba(0, 113, 227, 1) 90%
-    );
+    ); */
+    background-image: radial-gradient( circle farthest-corner at 10% 20%,  rgba(50,172,109,1) 0%, rgba(209,251,155,1) 100.2% );
     background-repeat: no-repeat;
     background-size: cover;
   
@@ -20,9 +21,14 @@
     justify-content: center;
     align-items: center;
     margin: auto;
-    background-color: #252d4a;
     padding: 20px;
-    box-shadow: 10px 10px 42px 0px rgba(0, 0, 0, 0.75);
+    /* background-color: #252d4a;
+     
+    box-shadow: 10px 10px 42px 0px rgba(0, 0, 0, 0.75); */
+    border-radius: 50px;
+background: #01bf71;
+box-shadow:  20px -20px 60px #01a260, 
+             -20px 20px 60px #01dc82;
     min-height: 400px;
     /* height: min-content; */
     border-radius: 15px;
@@ -67,13 +73,16 @@
     /* background: -webkit-linear-gradient(to right, #859398, #283048);  /* Chrome 10-25, Safari 5.1-6 */
   
     /* background: linear-gradient(to right, #859398, #283048); W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-  
+/*   
     background-image: radial-gradient(
       circle farthest-corner at 10% 20%,
       rgba(153, 103, 186, 1) 41.2%,
       rgba(0, 113, 227, 1) 90%
-    );
-    color: #fff;
+    ); */
+   /* background-color:   #252d4a; */
+   background-color: 
+   #f6f5f7;
+    color: #333;
     cursor: pointer;
   }
   button:hover {
