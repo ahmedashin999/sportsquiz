@@ -1,0 +1,22 @@
+.active{
+    background: #fff;
+}
+.offline{
+    background: transparent;
+}
+.img{
+    background: url('../Images/grading.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+     
+    background-position: center;
+    object-fit: cover;
+     
+    
+}
+.menuActive{
+    color:#ccc;
+}
+.menuOff{
+    color:#fff;
+}
