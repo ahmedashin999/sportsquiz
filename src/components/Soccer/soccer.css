@@ -32,7 +32,7 @@ box-shadow:  20px -20px 60px #01a260,
     min-height: 400px;
     /* height: min-content; */
     border-radius: 15px;
-    width: 500px;
+    width: 800px;
   }
   @media screen and (max-width:500px){
       .quiz{
@@ -52,9 +52,10 @@ box-shadow:  20px -20px 60px #01a260,
   }
   .answer-section {
     display: grid;
-    grid-template-columns: 1fr 1fr ;
-    gap: 20px;
-    justify-content: space-between;
+    grid-template-columns: 1fr  ;
+    gap: 10px;
+    justify-content: center;
+    align-items: center;
   }
   @media screen and (max-width:500px){
     .answer-section{
@@ -62,13 +63,17 @@ box-shadow:  20px -20px 60px #01a260,
         gap:8px;
       }
   }
+  .sign-up{
+    width:150px;
+  }
   button {
-    width: 200px;
+    width: 60%;
     text-align: center;
     padding: 10px;
     border-radius: 5px;
     outline: none;
     border: none;
+    justify-self: center;
     /* background: #283048;  /* fallback for old browsers */
     /* background: -webkit-linear-gradient(to right, #859398, #283048);  /* Chrome 10-25, Safari 5.1-6 */
   
@@ -86,5 +91,6 @@ box-shadow:  20px -20px 60px #01a260,
     cursor: pointer;
   }
   button:hover {
-    background: #555e7d;
+    background: linear-gradient(to left, #f2709c, #ff9472);
+    color:#fff;
   }

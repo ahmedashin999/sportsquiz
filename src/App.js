@@ -1,6 +1,4 @@
-import React,{useState} from 'react';
-//  import Navbar from './components/Navbar/'
-//  import Sidebar from './components/Sidebar'
+import React from 'react';
  import Home from './components/pages'
  import Blog from './components/Blog'
  import Utn from './components/UTN'
@@ -8,13 +6,10 @@ import React,{useState} from 'react';
  import Soccer from './components/Soccer';
  import {BrowserRouter as Router, Switch,Route} from 'react-router-dom';
 import './App.css';
-import Tresult from './components/Tennis/Tresult';
+ 
 
  const App=()=> {
   
-  // const[isOpen,setIsOpen]=useState(false)
-  // const toggle=()=>{
-  //     setIsOpen(!isOpen)}
   return (
     <Router>
       

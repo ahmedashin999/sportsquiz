@@ -8,7 +8,7 @@ export const Nav =styled.nav`
 // background: linear-gradient(to right, #182848, #4b6cb7);  
 
 // background:transparent;
-
+font-family: 'Times New Roman', Times, serif;
    height: 80px;
     margin-top: -80px;
   

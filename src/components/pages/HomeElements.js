@@ -8,12 +8,14 @@ background:#fff;
 
  margin-top:0px;
  
+ 
  `;
  export const HeroIntro=styled.div`
  margin-top:30px;
   font-size:20px;
   color:#333;
   margin-left:30px;
+  font-family: 'Times New Roman', Times, serif;
  `
  export const InfoH2=styled.h2`
    color:#333;

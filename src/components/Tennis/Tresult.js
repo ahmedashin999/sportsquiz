@@ -39,31 +39,31 @@ function Tresult({score}) {
 
               <p>Keep practicing to get to a UTN 5</p>
               <p>Opt in to our Monthly Newsletter for best tips in your sport.</p>    
-                       <button onClick={()=>setModalIsOpen(true)}>Sign Up</button>
+                       <button className="sign-up" onClick={()=>setModalIsOpen(true)}>Sign Up</button>
             
                        <Modal   isOpen={modalIsOpen}
                        shouldCloseOnOverlayClick={false}
                        style={
-                            {
-                                 overlay:{
+                         {
+                              overlay:{
+                                 backgroundColor:'transparent'
+
+                              },
+                              content:{
+                                borderRradius: '50px',
+                                backgroundColor:'#01bf71',
+                                   display:'flex',
+                                   flexDirection:'column',
+                                   justifyContent:'center',
+                                   alignItems:'center',
+                                   border:'none',
                                    
-   
-                                 },
-                                 content:{
-                                   // backgroundColor: '#252d4a',
-                                   borderRradius: '50px',
-                                   backgroundColor:'#01bf71',
- 
-                                      display:'flex',
-                                      flexDirection:'column',
-                                      justifyContent:'center',
-                                      alignItems:'center',
-                                 }
-                            }
+                              }
+                         }
                        }
                        >
                              <SigninPage/>   
-                            <button onClick={()=>setModalIsOpen(false)}>Close</button>
+                            <button className="sign-up" onClick={()=>setModalIsOpen(false)}>Close</button>
                        </Modal>
                         
                        

@@ -43,7 +43,7 @@ function Sresult({score}) {
               <p>Keep practicing to get to a UTN 5</p>
               <p>Opt in to our Monthly Newsletter for best tips in your sport.</p>            
               
-              <button onClick={()=>setModalIsOpen(true)}>Sign Up</button>
+              <button className="sign-up" onClick={()=>setModalIsOpen(true)}>Sign Up</button>
               
                        
                        <Modal isOpen={modalIsOpen}
@@ -51,7 +51,7 @@ function Sresult({score}) {
                        style={
                             {
                                  overlay:{
-                                   
+                                    backgroundColor:'transparent'
   
                                  },
                                  content:{
@@ -61,12 +61,14 @@ function Sresult({score}) {
                                       flexDirection:'column',
                                       justifyContent:'center',
                                       alignItems:'center',
+                                      border:'none',
+                                      
                                  }
                             }
                        }
                        >
                              <SigninPage/>   
-                            <button onClick={()=>setModalIsOpen(false)}>Close</button>
+                            <button className="sign-up" onClick={()=>setModalIsOpen(false)}>Close</button>
                        </Modal>
                        
                         
