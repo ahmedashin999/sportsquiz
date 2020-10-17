@@ -5,14 +5,20 @@
     background: transparent;
 }
 .img{
-    background: url('../Images/grading.png');
+    background: url('../Images/Group.png');
     background-repeat: no-repeat;
     background-size: cover;
      
     background-position: center;
     object-fit: cover;
+    border:none;
      
     
+}
+@media screen and(max-width:520px){
+    .img{
+        width:100px;
+    }
 }
 .menuActive{
     color:#ccc;

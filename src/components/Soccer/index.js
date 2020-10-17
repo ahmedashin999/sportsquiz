@@ -1,6 +1,7 @@
 import React,{useState} from 'react'
 import questions from './SoccerData.json'
 import Sresult from './Sresult';
+import logo from '../Images/soccerlogo.png';
 import './soccer.css'
 import Progress from '../Progress';
 function Soccer() {
@@ -27,10 +28,19 @@ function Soccer() {
         {showScore ? (
             <div className="score-section">
                  <Sresult score={score} />
+                 
             </div>
         ):(
+        <>
+            <div className="soccer-heading">
+                <img src={logo} alt=""className="logo"/>
+            <Progress done={done}/>
+            <div className="ques-count">
+                     Question {currentQuestion}/10
+                 </div>
+            </div>
             <div className="quiz">
-                  <Progress done={done}/>
+                   
             <div className="question-section">
                
                 
@@ -45,7 +55,9 @@ function Soccer() {
                     </button>
                 ))}
             </div>
+            
             </div>
+            </>
         )}
     </div> 
     )

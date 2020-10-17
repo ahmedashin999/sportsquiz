@@ -3,6 +3,7 @@ import tennisData from './tennisData.json'
 import Tresult from './Tresult';
 import './tennis.css';
 import Progress from '../Progress'
+import logo from '../Images/tennislogo.png'
 function Tennis() {
     
   const[currentQuestion,setCurrentQuestion]=useState(0);
@@ -39,8 +40,17 @@ function Tennis() {
             <Tresult score={score} />
         
         ):(
+            <>
+
+                 <div className="tennis-heading">
+                 <img src={logo} alt=""className="logo"/>
+            <Progress done={done}/>
+            <div className="ques-count">
+                     Question {currentQuestion}/10
+                 </div>
+                 </div>
             <div className="quiz">
-                <Progress done={done}/>
+                 
             <div className="question-section">
  
                 <div className="question-text">
@@ -55,6 +65,7 @@ function Tennis() {
                 ))}
             </div>
             </div>
+            </>
         )}
     </div>
     )

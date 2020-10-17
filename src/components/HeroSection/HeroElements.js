@@ -46,25 +46,25 @@ flex-direction:column;
 align-items:center;
 
 `
-export const HeroH3 =styled.h3`
-color:#fff;
+export const HeroH3 =styled.h1`
+color:#ee4e14;
 font-weight:bold;
-font-size:24px;
+ font-size:30px;
 text-align:center;
 
 @media screen  and(max-width: 768px){
     font-size:20px;
 
 }
-@media screen  and(max-width: 480px){
+@media screen  and(max-width: 520px){
     font-size:16px;
 }
 `
 
 export const HeroH2=styled.h2`
-color:#fff;
+color:#333;
 margin-top:0px;
-font-size:36px;
+font-size:30px;
 text-align:center;
 max-width:600px;
 
@@ -91,7 +91,7 @@ max-width:600px;
     font-size:16px;}
 `
 export const HeroP=styled.p`
-color:#fff;
+color:#ee4e14;
 margin-top:-5px;
 font-size:14px;
 text-align:center;
@@ -108,17 +108,11 @@ align-items:center;
 
 export const Button =styled(Link)`
  border-radius: 50px;
-//  background: ${({primary})=>(primary ?'#01bf71':'#010606' )};
-// background: #EC6F66;   
-// background: -webkit-linear-gradient(to right, #F3A183, #EC6F66);  
-// background: linear-gradient(to right, #F3A183, #EC6F66);
-background:#01bf71;  
- 
- 
-
+background:#ee4e14;  
  white-space:nowrap;
  padding:${({big})=>(big ? '14px 48px': '12px 30px')};
  color:${({dark})=>(dark ? '#010606':'#fff')};
+  
 font-size:20px; 
 outline:none;
 border:none;
@@ -135,7 +129,7 @@ text-decoration:none;
     
     opacity:0.8;
 }
-@media screen and (max-width:480px){
+@media screen and (max-width:520px){
     font-size:15px;
     flex-direction:column;
 }

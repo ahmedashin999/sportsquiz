@@ -1,8 +1,21 @@
 .hero{
-    background:url('../Images/hero.jpg');
+    background:url('../Images/landing.jpg');
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
     height:700px;
     font-family: 'Times New Roman', Times, serif;
+    opacity:0.9;
+
+}
+.hero::after{
+    content:'';
+    background-color:#333;
+
+ 
+}
+@media screen and(max-width:520px){
+    .btn{
+        display: none;
+    }
 }

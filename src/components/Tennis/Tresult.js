@@ -1,10 +1,12 @@
-import React,{useState} from 'react'
+import React from 'react'
 import './tennis.css'
- import Modal from 'react-modal'
-import SigninPage from '../pages/signin';
-Modal.setAppElement('#root');
+  
+ import logo from '../Images/tennislogo.png'
+import ProgressCompleted from '../Progress/ProgressCompleted';
+import {Link} from 'react-router-dom'
+ 
 function Tresult({score}) {
-    const [modalIsOpen,setModalIsOpen]=useState(false)
+   
     let grade = 0;
  
           if(score>=287 && score<=318 ){
@@ -33,44 +35,29 @@ function Tresult({score}) {
              grade=10
         } 
     return (
-        <div className="result">
-         <h4>Congratulations- Your UTN is:</h4>  
-    <h1>{grade}</h1>
+     <div className="result-heading">
+     <img src={logo} alt=""className="logo"/>
+  <ProgressCompleted/>
 
-              <p>Keep practicing to get to a UTN 5</p>
-              <p>Opt in to our Monthly Newsletter for best tips in your sport.</p>    
-                       <button className="sign-up" onClick={()=>setModalIsOpen(true)}>Sign Up</button>
-            
-                       <Modal   isOpen={modalIsOpen}
-                       shouldCloseOnOverlayClick={false}
-                       style={
-                         {
-                              overlay:{
-                                 backgroundColor:'transparent'
+  <div className="result">
+    
 
-                              },
-                              content:{
-                                borderRradius: '50px',
-                                backgroundColor:'#01bf71',
-                                   display:'flex',
-                                   flexDirection:'column',
-                                   justifyContent:'center',
-                                   alignItems:'center',
-                                   border:'none',
-                                   
-                              }
-                         }
-                       }
-                       >
-                             <SigninPage/>   
-                            <button className="sign-up" onClick={()=>setModalIsOpen(false)}>Close</button>
-                       </Modal>
-                        
-                       
-               <p>No spam-it is not our style-Opt out anytime</p>
-              <button className="grade"  type="submit">Graded 27,9888 people and counting</button>
-              
-       </div>
+     <h4>Congratulations- Your USN is:</h4> 
+     <h1>{grade}</h1>
+
+        <p>Keep practicing to get to a USN 5</p>
+         
+        
+       
+          <Link to="/signup">
+           <button className="sign-up">Sign Up</button>
+               </Link> 
+                 
+                  
+                    <p className="small">Sign Up for some free sports tips</p>
+                 
+ </div>
+ </div>
     )
 }
 

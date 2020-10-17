@@ -1,12 +1,13 @@
-import React,{useState} from 'react'
+import React from 'react'
 import '../Tennis/tennis.css';
 import '../Soccer/soccer.css'
-import SigninPage from '../pages/signin'
-import Modal from 'react-modal';
+import logo from '../Images/soccerlogo.png'
+import ProgressCompleted from '../Progress/ProgressCompleted'
+import {Link} from 'react-router-dom'
+ 
 
-Modal.setAppElement('#root');
 function Sresult({score}) {
-     const [modalIsOpen,setModalIsOpen]=useState(false)
+ 
     let grade=0;
     if(score>=287 && score<=318 ){
          
@@ -34,46 +35,28 @@ function Sresult({score}) {
             grade=10
        } 
     return (
+     <div className="result-heading">
+           <img src={logo} alt=""className="logo"/>
+        <ProgressCompleted/>
+     
         <div className="result">
           
      
     <h4>Congratulations- Your USN is:</h4> 
     <h1>{grade}</h1>
 
-              <p>Keep practicing to get to a UTN 5</p>
-              <p>Opt in to our Monthly Newsletter for best tips in your sport.</p>            
+              <p>Keep practicing to get to a USN 5</p>
+               
               
-              <button className="sign-up" onClick={()=>setModalIsOpen(true)}>Sign Up</button>
-              
-                       
-                       <Modal isOpen={modalIsOpen}
-                       shouldCloseOnOverlayClick={false}
-                       style={
-                            {
-                                 overlay:{
-                                    backgroundColor:'transparent'
-  
-                                 },
-                                 content:{
-                                   borderRradius: '50px',
-                                   backgroundColor:'#01bf71',
-                                      display:'flex',
-                                      flexDirection:'column',
-                                      justifyContent:'center',
-                                      alignItems:'center',
-                                      border:'none',
-                                      
-                                 }
-                            }
-                       }
-                       >
-                             <SigninPage/>   
-                            <button className="sign-up" onClick={()=>setModalIsOpen(false)}>Close</button>
-                       </Modal>
+           
+ <Link to="/signup">
+ <button className="sign-up">Sign Up</button>
+ </Link> 
                        
                         
-                          <p>No spam-it is not our style-Opt out anytime</p>
-                       <button className="grade"  type="submit">Graded 27,9888 people and counting</button>     
+                          <p className="small">Sign Up for some free sports tips</p>
+                       
+       </div>
        </div>
     )
 }
