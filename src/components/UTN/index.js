@@ -7,7 +7,7 @@ const Utn = () => {
     return (
         
             
-            <HeroInfo>
+            <HeroInfo className="utn">
                 <img src={logo} alt="" className="logo"/>
                 <HeroIntro>
                     <InfoH2>What is USN ?</InfoH2>

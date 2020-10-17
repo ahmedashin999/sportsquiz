@@ -7,7 +7,6 @@ justify-content:center;
 align-items:center;
 padding:0 30px;
  height:700px;
-// position:relative;
 z-index:1;
 
 
@@ -52,6 +51,7 @@ font-weight:bold;
  font-size:30px;
 text-align:center;
 
+
 @media screen  and(max-width: 768px){
     font-size:20px;
 
@@ -67,9 +67,10 @@ margin-top:0px;
 font-size:30px;
 text-align:center;
 max-width:600px;
+font-weight:lighter;
 
 @media screen  and(max-width: 768px){
-    font-size:30px;
+    font-size:20px;
 
 }
 @media screen  and(max-width: 480px){
@@ -107,12 +108,11 @@ align-items:center;
 `
 
 export const Button =styled(Link)`
- border-radius: 50px;
+ border-radius: 5px;
 background:#ee4e14;  
  white-space:nowrap;
- padding:${({big})=>(big ? '14px 48px': '12px 30px')};
- color:${({dark})=>(dark ? '#010606':'#fff')};
-  
+  padding:8px 14px;
+  color:#fff;
 font-size:20px; 
 outline:none;
 border:none;
@@ -123,6 +123,7 @@ justify-content:center;
 align-items:center;
 transition:all 0.2s ease-in-out;
 text-decoration:none;
+width:120px;
 
 &:hover {
     transition:all o.2s ease-in-out;

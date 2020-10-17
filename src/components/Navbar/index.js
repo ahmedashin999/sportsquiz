@@ -1,44 +1,40 @@
-import React,{useState} from 'react'
+import React from 'react'
 import './navbar.css'
 import '../Images/logo.png';
+import logo from '../Images/Group.png'
  
-import {Link } from 'react-router-dom';
-import {Nav,NavbarContainer,NavLogo,NavMenu,NavItem,NavLinks,Logoimage} from './NavbarElements';
+import {Link } from 'react-router-dom'; 
 
 const Navbar = () => {
-    const[navbar,setNavbar]=useState(false);
-
-    const changeBackground=()=>{
-        if(window.scrollY >=80 ){
-            setNavbar(true)
-        }else{
-            setNavbar(false)
-        }
-    }
-    window.addEventListener('scroll',changeBackground);
+    
         
     return (
          <>
-          <Nav className={navbar ? 'active':'offline'}>
-              <NavbarContainer>
+          <div className='navbar'>
+              <div className="navbar-container">
                    
-                  <NavLogo>
+                  <div className="nav-logo">
                     
                      <Link to="/">
-                     <Logoimage className="img"   />
+                     <img  src={logo} className="img"   />
                      </Link>
                  
             
-                  </NavLogo>
-                  <NavMenu>
+                  </div>
+                  <ul className="nav-menu">
                        
-                      <NavItem>
-                          <NavLinks  className={navbar ? 'menuActive':'menuOff'}to="/help">WHAT IS UTN ?</NavLinks>
-                      </NavItem>
+                      <li className="nav-item">
+                      <Link to="/help" className= "nav-link">
+                      
+                               What is USN ?
+                                
+                              </Link>
+                          
+                      </li>
                      
-                  </NavMenu>
-              </NavbarContainer>
-          </Nav>
+                  </ul>
+              </div>
+          </div>
          </>
     )
 }

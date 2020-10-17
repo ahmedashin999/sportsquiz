@@ -1,20 +1,23 @@
-.tennis {
+@import url("https://fonts.googleapis.com/css2?family=Oswald&family=Roboto&display=swap");
+.quiz-start {
   background-color: #fff;
   background-repeat: no-repeat;
   background-size: cover;
+  display: flex;
+  flex-direction: column;
+  /* height: 105vh; */
   width: 100%;
   opacity: 0.9;
   display: flex;
   justify-content: center;
   align-items: center;
-  font-family: "Times New Roman", Times, serif;
-  flex-direction: column;
 }
-.tennis-heading {
+.quiz-heading {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  height: 20%;
   margin-bottom: 50px;
 }
 .ques-count {
@@ -33,6 +36,7 @@
   justify-content: center;
   align-items: center;
   margin: auto;
+  margin-top: 40px;
   padding: 20px;
   border-radius: 50px;
   background: #ffffff;
@@ -41,31 +45,35 @@
   border-radius: 15px;
   width: 500px;
 }
-@media only screen and(max-width:520px) {
-  .quiz {
-    box-shadow: none;
-    border-radius: none;
-  }
-}
+
 .question-text {
   font-size: 30px;
   margin-bottom: 20px;
-  color: #fff;
-  font-family: ari;
+  color: #333;
+  font-weight: bold;
+  font-family: "Oswald", sans-serif;
+  text-align: center;
+}
+@media screen and (max-width: 520px) {
+  .question-text {
+    font-size: 20px;
+  }
 }
 .answer-section {
-  width: 600px;
   display: grid;
   grid-template-columns: 1fr;
   gap: 10px;
   justify-content: center;
   align-items: center;
 }
-@media screen and (max-width: 500px) {
+@media screen and (max-width: 520px) {
   .answer-section {
     grid-template-columns: 1fr;
     gap: 8px;
   }
+}
+.sign-up {
+  width: 150px;
 }
 button {
   width: 60%;
@@ -75,15 +83,33 @@ button {
   outline: none;
   border: none;
   justify-self: center;
-
-  background-color: #333;
-  color: #fff;
+  background-color: lightgray;
+  color: #333;
   cursor: pointer;
-  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
 }
 button:hover {
-  background: teal;
+  background: #ee4e14;
+  color: #fff;
 }
+@media screen and (max-width: 520px) {
+  button {
+    width: 40%;
+  }
+}
+@media screen and (max-width: 400px) {
+  button {
+    width: 30%;
+  }
+}
+result-heading {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
 .submit {
   background: #ee4e14;
   width: 120px;
@@ -125,10 +151,11 @@ button:hover {
   background-color: #ee4e14;
   color: #fff;
 }
-@media screen and (max-width: 500px) {
+@media screen and (max-width: 520px) {
   .result {
     width: 90%;
     font-size: 14px;
+    box-shadow: none;
   }
 }
 
@@ -153,6 +180,7 @@ input {
   font-weight: bold;
   color: #333;
   margin-top: 15px;
+  text-align: center;
 }
 p {
   color: #333;

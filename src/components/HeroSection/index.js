@@ -1,34 +1,37 @@
 import React from 'react'
-import { useState } from 'react'
 import './hero.css'
-import {HeroContainer,HeroContent,HeroH2,HeroH3,HeroBtnWrapper,HeroP,Button} from './HeroElements'
+import {Link} from 'react-router-dom'
+
 const HeroSection = () => {
-    const [hover,setHover]=useState(false);
-    const onHover=()=>{
-        setHover(hover)
-    }
+   
+    
     return (
-        <HeroContainer className="hero">
+        <div className="hero">
             
-            <HeroContent>
-                <HeroH3> How Good Are You At Sport?</HeroH3>
-                <HeroH2>Take our Quick (10) Question Quiz and Get your Universal Sports number (USN)</HeroH2>
+            <div className="hero-content">
+                <h1 className="first"> How Good Are You At Sport?</h1>
+                <h1 className="second">Take our Quick (10) Question Quiz and Get your Universal Sports number (USN)</h1>
        
-                <HeroP>Pick Your Sport</HeroP>
-                   <HeroBtnWrapper>
-                       < Button   to="/get-your-utn"
-                       onMouseEnter={onHover} onMouseLeave={onHover}
-                       >
-                           Tennis (UTN)
-                       </Button>
-                       <Button className="btn"  to="/get-your-usn"
-                         onMouseEnter={onHover} onMouseLeave={onHover}
-                       >
-                           Soccer (USN)
-                       </Button>
-                   </HeroBtnWrapper>
-            </HeroContent>
-        </HeroContainer>
+                <p className="pick">Pick Your Sport</p>
+                   <div className="HeroBtnWrapper">
+                       <Link to="/get-your-utn">
+                       <button className="btn" >
+                           Tennis
+                       </button>
+                       
+                       </Link>
+                       
+                       <Link to="/get-your-usn">
+                       <button className="btn">
+                           Soccer
+                       </button>
+                       </Link>
+                       <br/>
+                       <br/>
+                       <p>Graded 27000 people</p>
+                   </div>
+            </div>
+        </div>
     )
 }
 

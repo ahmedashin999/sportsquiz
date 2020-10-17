@@ -1,7 +1,8 @@
 import React,{useState} from 'react'
 import tennisData from './tennisData.json'
 import Tresult from './Tresult';
-import './tennis.css';
+import '../css/quiz.css'
+ 
 import Progress from '../Progress'
 import logo from '../Images/tennislogo.png'
 function Tennis() {
@@ -33,7 +34,7 @@ function Tennis() {
      
  } 
     return (
-        <div className="tennis">
+        <div className="quiz-start">
         {showScore ? (
             
             
@@ -42,7 +43,7 @@ function Tennis() {
         ):(
             <>
 
-                 <div className="tennis-heading">
+                 <div className="quiz-heading">
                  <img src={logo} alt=""className="logo"/>
             <Progress done={done}/>
             <div className="ques-count">

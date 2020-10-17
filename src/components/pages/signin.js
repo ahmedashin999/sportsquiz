@@ -1,5 +1,5 @@
 import React from 'react'
-import '../Tennis/tennis.css'
+import '../css/quiz.css'
 import logo from '../Images/soccerlogo.png'
 import {Link} from 'react-router-dom'
 
