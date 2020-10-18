@@ -1,6 +1,6 @@
 import React from 'react'
 import './utn.css';
-import logo from '../Images/logo.png';
+import logo from '../Images/SportsGrading.svg';
 import {Link} from 'react-router-dom'
 import {HeroInfo,HeroIntro,InfoH2,Infop1,Infop4} from './UtnElements'
 const Utn = () => {
@@ -8,7 +8,9 @@ const Utn = () => {
         
             
             <HeroInfo className="utn">
-                <img src={logo} alt="" className="logo"/>
+                    <Link  className="logo" to="/"> 
+                <img src={logo} alt="" />
+                </Link>
                 <HeroIntro>
                     <InfoH2>What is USN ?</InfoH2>
                     <Infop1>USN stands for Universal Sports Number and is a simple rating system from (1) to (10). <br/>(1) Being a professional and (10) being a complete beginner.</Infop1>

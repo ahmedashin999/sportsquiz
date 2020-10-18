@@ -9,8 +9,8 @@ const HeroSection = () => {
         <div className="hero">
             
             <div className="hero-content">
-                <h1 className="first"> How Good Are You At Sport?</h1>
-                <h1 className="second">Take our Quick (10) Question Quiz and Get your Universal Sports number (USN)</h1>
+                <h1 className="first"> HOW GOOD ARE YOU AT SPORT?</h1>
+                <h1 className="second">Take our Quick (10) Question Quiz and Get your Universal Sports Number (USN)</h1>
        
                 <p className="pick">Pick Your Sport</p>
                    <div className="HeroBtnWrapper">
@@ -26,7 +26,7 @@ const HeroSection = () => {
                        <br/>
                         
                    </div>
-                   <p className="grade">Graded 27000 people</p>
+                   <p className="grade">27,000 Graded So Far</p>
             </div>
         </div>
     )

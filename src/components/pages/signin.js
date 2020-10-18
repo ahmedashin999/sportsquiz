@@ -1,12 +1,18 @@
 import React from 'react'
 import '../css/quiz.css'
-import logo from '../Images/soccerlogo.png'
+import logo from '../Images/SoccerGrading Logo_A1.svg'
 import {Link} from 'react-router-dom'
+import {FaChevronLeft} from 'react-icons/fa';
+import {BsChevronDoubleLeft} from 'react-icons/bs'
 
 function SigninPage() {
     return (
         <div className="form-page">
-            <img src={logo} className="logo" alt=""/>
+           <div className="logo-header">
+                <Link to="/" className="logo-btn"   > <FaChevronLeft/> </Link>
+                <img src={logo} alt=""className="logo"/>
+                <Link className="logo-btn"><BsChevronDoubleLeft/></Link>
+                </div>
 
          
             

@@ -1,8 +1,10 @@
 import React from 'react'
 import '../Tennis/tennis.css';
 import '../Soccer/soccer.css'
-import logo from '../Images/soccerlogo.png'
+import logo from '../Images/SoccerGrading Logo_A1.svg'
 import ProgressCompleted from '../Progress/ProgressCompleted'
+import {FaChevronLeft} from 'react-icons/fa';
+import {BsChevronDoubleLeft} from 'react-icons/bs';
 import {Link} from 'react-router-dom'
  
 
@@ -36,7 +38,11 @@ function Sresult({score}) {
        } 
     return (
      <div className="result-heading">
-           <img src={logo} alt=""className="logo"/>
+                          <div className="logo-header">
+                <button className="logo-btn"   > <FaChevronLeft/> </button>
+                <img src={logo} alt=""className="logo"/>
+                <button className="logo-btn"><BsChevronDoubleLeft/></button>
+                </div>
         <ProgressCompleted/>
      
         <div className="result">

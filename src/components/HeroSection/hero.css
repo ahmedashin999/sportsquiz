@@ -35,7 +35,7 @@
   font-size: 30px;
   text-align: center;
   max-width: 600px;
-  font-weight: lighter;
+  font-weight: 300;
 }
 .pick {
   color: #ee4e14;
@@ -45,10 +45,10 @@
   max-width: 600px;
 }
 .HeroBtnWrapper {
-  margin-top: 20px;
+  margin-top: 0px;
   display: grid;
   grid-template-columns: 1fr 1fr;
-  gap: 40px;
+  gap: 50px;
   justify-content: center;
 
   align-items: center;
@@ -68,12 +68,14 @@
   text-align: center;
   
    padding:12px  !important;
+   font-weight: bold;
 }
 .btn:hover {
   transition: all o.2s ease-in-out;
   opacity: 0.8;
 }
 .grade{
+  margin-top: -50px;
   text-align: center;
   font-size: 14px;
   font-weight: 600;
@@ -82,18 +84,19 @@
 @media screen and (max-width: 520px) {
   .HeroBtnWrapper {
     grid-template-columns: 1fr;
-    gap: 15px;
+    gap: 25px;
   }
-  /* .btn {
-    font-size: 20px;
+   .btn {
+    font-size: 18px;
     padding: 3px 10px;
-  } */
+  } 
 }
 @media screen and (max-width: 400px) {
     .first{
-        font-size: 20px;
+        font-size: 15px;
+
     }
     .second{
-        font-size: 20px;
+        font-size: 15px;
     }
 }

@@ -1,7 +1,7 @@
 import React from 'react'
 import './navbar.css'
-import '../Images/logo.png';
-import logo from '../Images/Group.png'
+ 
+import logo from '../Images/SportsGrading.svg'
  
 import {Link } from 'react-router-dom'; 
 
@@ -17,6 +17,7 @@ const Navbar = () => {
                     
                      <Link to="/">
                      <img  src={logo} className="img"   />
+                     
                      </Link>
                  
             
