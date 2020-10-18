@@ -14,22 +14,19 @@ const HeroSection = () => {
        
                 <p className="pick">Pick Your Sport</p>
                    <div className="HeroBtnWrapper">
-                       <Link to="/get-your-utn">
-                       <button className="btn" >
-                           Tennis
-                       </button>
+                       <Link className="btn" to="/get-your-utn">
+                        Tennis
                        
                        </Link>
                        
-                       <Link to="/get-your-usn">
-                       <button className="btn">
-                           Soccer
-                       </button>
+                       <Link className="btn" to="/get-your-usn">
+                        Soccer
                        </Link>
                        <br/>
                        <br/>
-                       <p>Graded 27000 people</p>
+                        
                    </div>
+                   <p className="grade">Graded 27000 people</p>
             </div>
         </div>
     )

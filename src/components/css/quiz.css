@@ -92,6 +92,7 @@ button {
 button:hover {
   background: #ee4e14;
   color: #fff;
+  transition: 0.3s all ease-in;
 }
 @media screen and (max-width: 520px) {
   button {

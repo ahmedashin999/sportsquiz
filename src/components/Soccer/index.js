@@ -5,7 +5,7 @@ import logo from '../Images/soccerlogo.png';
 import '../css/quiz.css';
 import Progress from '../Progress';
 function Soccer() {
-        
+  const[hide,setHide]=useState(false);
   const[currentQuestion,setCurrentQuestion]=useState(0);
   const [showScore,setShowScore]=useState(false);
   const[score,setScore]=useState(0);
@@ -22,6 +22,9 @@ function Soccer() {
      } else {
          setShowScore(true);
      }
+     if(currentQuestion===0){
+         setHide(true);
+     }
  }
     return (
         <div className="quiz-start">
@@ -36,6 +39,7 @@ function Soccer() {
                 <img src={logo} alt=""className="logo"/>
             <Progress done={done}/>
             <div className="ques-count">
+                
                      Question {currentQuestion}/10
                  </div>
             </div>
