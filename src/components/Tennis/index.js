@@ -72,7 +72,7 @@ function Tennis() {
                 <img src={logo} alt=""className="logo"/>
                 {
                      currentQuestion > 0 ? (
-                        <button className="logo-btn" onClick={handlePrevQues}   > <BsChevronDoubleLeft/> </button>
+                        <button className="logo-btn" onClick={handlePrevQues}   > <BsChevronDoubleLeft className="icon icon-2"/> </button>
                      ): ''
                  }
                 </div>

@@ -43,6 +43,10 @@
 .icon:hover{
 color:#ee4e14
 }
+.icon-2 {
+  color:#333;
+  font-weight: bolder;
+}
 .quiz {
   display: flex;
   flex-direction: column;
