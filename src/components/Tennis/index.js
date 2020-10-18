@@ -63,12 +63,12 @@ function Tennis() {
                  <div className="logo-header">
                      {
                           currentQuestion > 0 ? (
-                            <button onClick={handlePrevQues} className="logo-btn" style={style}  > <FaChevronLeft className="icon"/> </button>
+                            <a onClick={handlePrevQues} className="logo-btn" style={style}  > <FaChevronLeft className="icon"/> </a>
                           ) : ''
 }
                           
                      
- 
+
                 <img src={logo} alt=""className="logo"/>
                 {
                      currentQuestion > 0 ? (

@@ -46,7 +46,7 @@ function Soccer() {
                 <div className="logo-header">
                  {
                      currentQuestion > 0 ? (
-                        <button className="logo-btn" onClick={handlePrevQues}   > <FaChevronLeft/> </button>
+                        <button className="logo-btn" onClick={handlePrevQues}   > <FaChevronLeft className="icon"/> </button>
                      ): ''
                  }
                 <img src={logo} alt=""className="logo"/>
